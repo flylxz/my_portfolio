@@ -38,7 +38,7 @@
   }
 }
 
-// Menu OverLay
+// Menu Overlay
 .menu {
   position: fixed;
   top: 0;
@@ -71,7 +71,7 @@
     @include easeOut;
 
     &.show {
-      //Slide in from top
+      // Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
@@ -81,17 +81,18 @@
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
+
     &.show {
-      //Slide in from bottom
+      // Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
 
     .portrait {
-      width: 250px;
-      height: 400px;
+      width: 200px;
+      height: 350px;
       background: url('../img/Photo02.jpeg');
       background-size: cover;
-      border-radius: 30px;
+      border-radius: 20px;
       border: solid 3px $secondary-color;
     }
   }
@@ -101,7 +102,7 @@
     @include easeOut;
 
     &.show {
-      //Slide in from right
+      // Slide in from right
       transform: translate3d(0, 0, 0);
     }
 
@@ -117,7 +118,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
